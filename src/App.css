@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
+
+body{
+  background:#F8F5F2;
+  color:#111827;
+}
+
+/* NAVBAR */
+
+.Navbar{
+  width:90%;
+  margin:20px auto;
+  padding:18px 30px;
+  border-radius:60px;
+  background:white;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.Navbar ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+.Navbar button{
+  background:#FF6B35;
+  color:white;
+  border:none;
+  padding:12px 24px;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.Hero{
+  min-height:90vh;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding:50px 8%;
+}
+
+.Hero h1{
+  font-size:7rem;
+  line-height:.9;
+}
+
+.Hero p{
+  color:#FF6B35;
+  font-weight:600;
+}
+
+.Hero span{
+  display:block;
+  max-width:450px;
+  margin:25px 0;
+  color:#666;
+}
+
+.Hero button{
+  padding:15px 30px;
+  border:none;
+  border-radius:40px;
+  background:#111827;
+  color:white;
+}
+
+.Hero-shoe img{
+  width:600px;
+  filter:drop-shadow(0 40px 40px rgba(0,0,0,.2));
+}
+
+/* SNEAKERS */
+
+.Sneakers{
+  padding:80px 8%;
+}
+
+.sneakers h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:3rem;
+}
+
+.shoe-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.shoe-card{
+  background:white;
+  border-radius:30px;
+  padding:20px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.05);
+  transition:.4s;
+}
+
+.shoe-card:hover{
+  transform:translateY(-12px);
+}
+
+.shoe-card img{
+  width:100%;
+  transition:.5s;
+}
+
+.shoe-card:hover img{
+  transform:rotate(-10deg) scale(1.08);
+}
+
+.shoe-card button{
+  margin-top:10px;
+  background:#FF6B35;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:25px;
+}
+
+/* COLLECTIONS */
+
+.Collections{
+  padding:80px 8%;
+}
+
+.Collections h2{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.bento{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.box{
+  height:220px;
+  background:white;
+  border-radius:25px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:2rem;
+  font-weight:700;
+  box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+/* REVIEWS */
+
+.Reviews{
+  padding:80px 8%;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.Review{
+  background:white;
+  padding:30px;
+  border-radius:25px;
+  box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+/* FOOTER */
+
+.Footer{
+  text-align:center;
+  padding:50px;
+  margin-top:50px;
+}
